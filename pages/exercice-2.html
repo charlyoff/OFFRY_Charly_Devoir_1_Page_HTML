@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercice 2 - Tableaux</title>
+	<meta name="description" content="Exercice HTML presentant des tableaux avec titres et bordures.">
+</head>
+<body>
+	<header>
+		<h1>Annexe 2 : Exercice 2 - Tableaux</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Suivi des mouvements de caisse</h2>
+
+			<!-- L'attribut border est utilise ici uniquement parce qu'il est demande dans le sujet. -->
+			<table border="1">
+				<caption>Suivi des mouvements de caisse</caption>
+				<thead>
+					<tr>
+						<th scope="col">Date</th>
+						<th scope="col">Debit</th>
+						<th scope="col">Credit</th>
+						<th scope="col">Balance</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><time datetime="2024-03-01">01/03/2024</time></td>
+						<td>50,00 EUR</td>
+						<td>0,00 EUR</td>
+						<td>-50,00 EUR</td>
+					</tr>
+					<tr>
+						<td><time datetime="2024-03-02">02/03/2024</time></td>
+						<td>0,00 EUR</td>
+						<td>150,00 EUR</td>
+						<td>+100,00 EUR</td>
+					</tr>
+					<tr>
+						<td><time datetime="2024-03-03">03/03/2024</time></td>
+						<td>25,00 EUR</td>
+						<td>0,00 EUR</td>
+						<td>+75,00 EUR</td>
+					</tr>
+					<tr>
+						<td><time datetime="2024-03-04">04/03/2024</time></td>
+						<td>0,00 EUR</td>
+						<td>50,00 EUR</td>
+						<td>+125,00 EUR</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th scope="row">Totaux</th>
+						<td>75,00 EUR</td>
+						<td>200,00 EUR</td>
+						<td>+125,00 EUR</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+
+		<section>
+			<h2>Horaires d'ouverture</h2>
+
+			<!-- L'attribut border est conserve pour respecter la consigne du devoir. -->
+			<table border="1">
+				<caption>Horaires d'ouverture</caption>
+				<thead>
+					<tr>
+						<th scope="col">Jour</th>
+						<th scope="col">Matin<br><small><time datetime="09:00">9h00</time> - <time datetime="12:00">12h00</time></small></th>
+						<th scope="col">Apres-midi<br><small><time datetime="14:00">14h00</time> - <time datetime="18:00">18h00</time></small></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lundi</td>
+						<td>Ferme</td>
+						<td>Ouvert</td>
+					</tr>
+					<tr>
+						<td>Mardi</td>
+						<td>Ouvert</td>
+						<td>Ouvert</td>
+					</tr>
+					<tr>
+						<td>Mercredi</td>
+						<td>Ouvert</td>
+						<td>Ouvert</td>
+					</tr>
+					<tr>
+						<td>Jeudi</td>
+						<td>Ouvert</td>
+						<td>Ouvert</td>
+					</tr>
+					<tr>
+						<td>Vendredi</td>
+						<td>Ouvert</td>
+						<td>Ouvert</td>
+					</tr>
+					<tr>
+						<td>Samedi</td>
+						<td>Ouvert</td>
+						<td>Ferme</td>
+					</tr>
+					<tr>
+						<td>Dimanche</td>
+						<td>Ferme</td>
+						<td>Ferme</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<nav aria-label="Retour">
+			<ul>
+				<li><a href="../index.html">Retour a la page d'accueil</a></li>
+			</ul>
+		</nav>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 - Tous droits reserves</p>
+	</footer>
+</body>
+</html>

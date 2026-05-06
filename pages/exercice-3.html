@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercice 3 - Formulaire de contact</title>
+	<meta name="description" content="Exercice HTML presentant un formulaire de contact avec champs obligatoires.">
+</head>
+<body>
+	<header>
+		<h1>Annexe 3 : Exercice 3 - Formulaire de contact</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Formulaire de contact</h2>
+
+			<form action="#" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Informations personnelles</legend>
+
+					<div>
+						<span>Civilite :</span>
+						<label><input type="radio" name="civilite" value="mme" checked> Mme</label>
+						<label><input type="radio" name="civilite" value="m"> M.</label>
+					</div>
+
+					<div>
+						<label for="prenom">Prenom *</label><br>
+						<input type="text" id="prenom" name="prenom" required placeholder="Votre prenom">
+					</div>
+
+					<div>
+						<label for="nom">Nom *</label><br>
+						<input type="text" id="nom" name="nom" required placeholder="Votre nom">
+					</div>
+
+					<div>
+						<label for="email">Email *</label><br>
+						<input type="email" id="email" name="email" required placeholder="Votre adresse mail">
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Votre message</legend>
+
+					<div>
+						<label for="destinataire">Destinataire</label><br>
+						<select id="destinataire" name="destinataire">
+							<option value="general" selected>General</option>
+							<option value="comptabilite">Comptabilite</option>
+							<option value="sav">SAV</option>
+							<option value="service-client">Service client</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="sujet">Sujet</label><br>
+						<input type="text" id="sujet" name="sujet" placeholder="Objet de votre message">
+					</div>
+
+					<div>
+						<label for="message">Message *</label><br>
+						<textarea id="message" name="message" required placeholder="Saisissez votre message ici" rows="8" cols="60"></textarea>
+					</div>
+
+					<div>
+						<label for="piecejointe">Ajouter une piece jointe</label><br>
+						<input type="file" id="piecejointe" name="piecejointe">
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Options</legend>
+
+					<div>
+						<label><input type="checkbox" name="copie" value="oui"> Recevoir une copie du message</label><br>
+						<label><input type="checkbox" name="offres" value="oui"> Recevoir nos offres</label>
+					</div>
+
+					<div>
+						<span>Etre contacte par un conseiller :</span>
+						<label><input type="radio" name="contact" value="non" checked> Non</label>
+						<label><input type="radio" name="contact" value="telephone"> Par telephone</label>
+						<label><input type="radio" name="contact" value="email"> Par email</label>
+					</div>
+				</fieldset>
+
+				<p><em>* champs obligatoires</em></p>
+
+				<div>
+					<button type="submit">Valider</button>
+					<button type="reset">Effacer</button>
+				</div>
+			</form>
+		</section>
+
+		<nav aria-label="Retour">
+			<ul>
+				<li><a href="../index.html">Retour a la page d'accueil</a></li>
+			</ul>
+		</nav>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 - Tous droits reserves</p>
+	</footer>
+</body>
+</html>
